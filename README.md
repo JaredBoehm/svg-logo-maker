@@ -1,7 +1,7 @@
 # svg-logo-maker
 
 ## Description
-A simple command line application that generated a svg logo based on user inputs. 
+A simple command line application that generates a svg logo based on user inputs. 
 
 ## Credits
 - [inquirer-maxlength-input-prompt](https://www.npmjs.com/package/inquirer-maxlength-input-prompt) was used to limit user input length in the terminal
