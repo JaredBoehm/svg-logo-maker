@@ -1,0 +1,9 @@
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg width="250" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    
+        <path d="M 127.16651,84.016145 200,149.8037 H 50.000001 Z" fill="gray"/>
+        <text x="110" y="130" font-size="16px" fill="white">C#</text>
+        
+    </svg>
+    

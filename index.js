@@ -1,7 +1,7 @@
 const inquirer = require('inquirer')
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
 const fs = require('fs')
-const shapes = require('./lib/shapes')
+const renderLogo = require('./lib/renderlogo')
 
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 const questions = [
@@ -32,7 +32,8 @@ const questions = [
 inquirer
     .prompt(questions)
     .then((data) => {
-        fs.writeFile('logo.svg', gm(data), (err) => {
+        let logo = renderLogo(data.shape, data.text, data.textColor, data.shapeColor)
+        fs.writeFile('logo.svg', logo, (err) => {
             err ? console.log(err) : console.log('Generated logo.svg!')
         })
     })
